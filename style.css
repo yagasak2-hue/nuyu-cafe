@@ -1,0 +1,166 @@
+body {
+            margin: 0;
+            padding: 0;
+            font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", sans-serif;
+            background-color: burlywood; 
+            color: #211408;
+        }
+
+        /* 全体の幅をスマホサイズにきゅっとまとめます */
+        .lp-container {
+            width: 100%;
+        }
+        /* バナー画像を横幅ぴったりに合わせます */
+        .main-banner img {
+            width: 100%;
+        }
+        .main-banner{
+          max-width: 800px;
+          margin: 0 auto;
+        }
+              
+        .catch-phrase {
+        max-width: 800px;
+        margin: 0 auto 40px;
+        background-color: rgba(60, 40, 20, 0.05);
+        padding: 30px 0;
+        text-align: center;
+        border-radius: 12px;
+        }
+        /* 中身のクッション（余白）を作ります */
+        .content-inner {
+            padding: 30px 0 0;
+        }
+.catch-phrase {
+  margin-bottom: 40px;
+}
+
+.catch-phrase h1 {
+  font-size: 24px; /* 👈 「nuyu」のサイズを18pxから24pxに少し大きくして見やすくします */
+  font-weight: normal;
+  margin: 0 0 10px 0;
+}
+
+.catch-phrase p {
+  font-size: 16px; /* 👈 「日々に…」を12pxから16pxに大きくして、h1とのバランスを良くします */
+  margin: 0;
+  opacity: 0.9;    /* 👈 少しだけ文字をハッキリさせるために0.8から0.9に上げます */
+}
+h2 {
+  font-size: 24px;
+  font-weight: normal;
+  margin-bottom: 30px;
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-decoration-color: #211408;
+  text-underline-offset: 8px;
+}
+        .menu-section {
+            max-width: 800px; /* 👈 エリア全体の最大幅を800pxに制限 */
+            margin: 0 auto;  /* 👈 画面の中央に配置 */
+            padding: 60px 20px;
+}
+        .menu-grid {
+            display: flex;
+            gap: 15px; /* 写真の間のスキマ */
+            width: 100%;
+        }
+        .menu-item {
+            flex: 1; /* 2つのメニューを同じ幅に */
+            max-width: calc(50% - 7.5px);
+        }
+        .menu-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 4px; /* 写真の角を少し丸く */
+           
+        }
+        .menu-item .item-name, .menu-item .item-price {
+            font-size: 16px;
+        }
+
+        /* 店舗情報のグレーの四角を作ります */
+        
+        .shop-info {
+          background-color: #f7f1e9; /* 👈 今より少し薄い、優しいミルクベージュを追加します */
+          width: 100vw;             /* 画面の横幅いっぱいに広げる */
+          position: relative;
+          left: 50%;
+          transform: translateX(-50%);
+          border-radius: 0;         /* 角丸をなくす */
+          text-align: center;       
+          padding: 60px 0;          /* 上下の隙間を広げてメリハリをつける */
+        }
+  .shop-info > * {
+          max-width: 800px;
+          margin-left: auto;
+          margin-right: auto;
+          padding: 0 20px;
+        }
+        .shop-info p, .shop-info dt, .shop-info dd {
+         font-size: 16px;          /* 👈 メニューと同じく16pxに大きくします */
+        }
+        .map-wrap {
+          max-width: 800px;
+          margin: 0 auto 25px;
+          width: 100%;
+        }
+        .map-wrap iframe {
+          width: 100%;
+          height: 400px;
+          border: 0;
+         }
+      .info-details p {
+        font-size: 14px;
+        margin: 6px 0;    /* 👈 上下の隙間をキュッと詰めました */
+       line-height: 1.4;
+         }
+
+/* 画面の横幅が 450px 以下のスマホサイズになったときの指示 */
+@media (max-width: 450px) {
+
+  /* メインコピーの文字サイズを、スマホに合わせて少し小さくする */
+  .catch-phrase h1 {
+    font-size: 16px;
+  }
+
+} /* 👈 ここで一度スマホ用を完全に閉じます！ */
+
+/* 下の細かい説明文字も、スマホに合わせて調整（これも別のメディアクエリか、別枠にする必要がありますが、一旦ここに配置します） */
+@media (max-width: 450px) {
+  .catch-phrase p {
+    font-size: 11px;
+  }
+} /* 👈 ここでも完全に閉じます！ */
+
+/* そのあとに、画面サイズに関係なく全体に効く文字色の指示を書きます */
+h1, h2, h3, p, div, span, body {
+  color: #3c2814 !important;
+}
+/* サイトの終点となるフッターのデザイン */
+footer {
+  background-color: #211408; /* 👈 今のフッターの焦げ茶色（もし違ったら元の色コードにしてください） */
+  width: 100vw;             /* 👈 画面の横幅いっぱいに広げます */
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 0;            /* 👈 上のアクセスエリアとピタッとくっつけます */
+  padding-top: 40px;        /* コピーライトの上の余白 */
+  padding-bottom: 60px;     /* 👈 コピーライトの下の余白（わざと広めにしてすっきりさせます） */
+  text-align: center;
+}
+footer p {
+  color: #fff;              
+  font-size: 12px;
+  margin: 0;
+}
+/* フッターの中のコピーライト文字の設定 */
+.copyright {
+  color: #f7f1e9 !important; /* 明るいミルクベージュ */
+  font-size: 10px;
+  margin: 0;
+}
+.info-details {
+  margin-top: 30px;
+}
